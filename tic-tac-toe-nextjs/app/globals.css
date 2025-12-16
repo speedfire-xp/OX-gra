@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* === GLOBALNE WYMUSZENIE CIEMNEGO STYLU === */
+
+/* 1. Tło całej strony */
+body {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* 2. Naprawa Kafelków, Paska Bocznego i Menu (były białe, teraz będą czarne) */
+.card, 
+.navbar, 
+.drawer-side > div, /* Pasek boczny */
+.menu, 
+.modal-box,
+.bg-base-100 {
+  background-color: #0a0a0a !important; /* Bardzo ciemny szary (prawie czarny) */
+  color: #ffffff !important;
+  border-color: #333333 !important;     /* Ciemnoszare ramki */
+}
+
+/* 3. Naprawa Pól Formularza (Ustawienia, Logowanie) */
+.input, .select, .textarea, .file-input {
+  background-color: #121212 !important; /* Ciemne tło pola */
+  border: 1px solid #555555 !important; /* Wyraźna ramka */
+  color: #ffffff !important;            /* Biały tekst wpisywania */
+}
+
+/* Naprawa placeholderów (szary tekst podpowiedzi) */
+.input::placeholder, .textarea::placeholder {
+  color: #aaaaaa !important;
+}
+
+/* 4. Naprawa Tabel (Lista gier) */
+.table {
+  background-color: #0a0a0a !important;
+  color: #ffffff !important;
+}
+.table th, .table td {
+  border-bottom-color: #333 !important;
+}
+.table tr:hover th, .table tr:hover td {
+  background-color: #222 !important; /* Podświetlenie wiersza */
+}
+
+/* 5. Naprawa Menu Nawigacji */
+.menu li a {
+  color: #ffffff !important;
+}
+.menu li a:hover, .menu li a.active {
+  background-color: #333333 !important;
+  color: #ffffff !important;
+}
+
+/* 6. Inne poprawki */
+a:not(.btn) {
+  color: #60a5fa; /* Jasnoniebieskie linki dla czytelności */
+}
+
+html {
+  outline: none !important;
+  color-scheme: dark; /* Informuje przeglądarkę o ciemnym trybie */
+}
