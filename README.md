@@ -1,5 +1,6 @@
 ## Live aplikacja
 
+https://ox-gra.vercel.app/
 
 # TicTacToe NxN – Next.js + Firebase
 
